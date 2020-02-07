@@ -13,6 +13,11 @@ c = list(range(1,25,2))
 @ex_time
 def merge_sorted_lists(a_list, b_list):
 
+    """ This function merge two sorted lists
+    and returns the resulting list. 
+    It has O(n) efficiency. 
+    """  
+
     # initialization
     result_list = []
     lenth_a = len(a_list)
