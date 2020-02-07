@@ -1,3 +1,6 @@
+from wrapper import ex_time
+
+
 # task case
 a = [-1, 8, 10]
 b = [-5, -3, 0, 1, 4, 7, 8, 14]
@@ -7,7 +10,7 @@ d = list(range(-20,30,3))
 c = list(range(1,25,2))
 
 
-
+@ex_time
 def merge_sorted_lists(a_list, b_list):
 
     # initialization
