@@ -22,18 +22,22 @@ def merge_sorted_lists(a_list, b_list):
 
     # merge until a shorter list is over
     while a_index < lenth_a and b_index < lenth_b:
+        
         if a_list[a_index] <= b_list[b_index]:
             result_list.append(a_list[a_index])
             a_index += 1
+        
         else:
             result_list.append(b_list[b_index])
             b_index += 1
 
     # add last part of a longer list
     result_list.extend(a_list[a_index:] + b_list[b_index:])
+    
     return result_list
 
 # execution task case
 print(merge_sorted_lists(a, b))
+
 # execution additional case
 print(merge_sorted_lists(d, c))
